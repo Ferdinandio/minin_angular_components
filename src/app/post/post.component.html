@@ -1,0 +1,13 @@
+<div
+  [ngClass]="{
+    'invert': !toggle
+  }"
+  class="card"
+  >
+  <h2>{{ post.title }}</h2>
+  <p>{{ post.text }}</p>
+
+  <button class="btn rmBtn" (click)="removePost()">&times;</button>
+
+  <ng-content></ng-content>
+</div>
